@@ -18,8 +18,8 @@ assertEqual(result.length, 2); // ensure we get back two elements
 assertEqual(result[0], "Lighthouse"); // ensure first element is "Lighthouse"
 assertEqual(result[1], "Labs"); // ensure second element is "Labs"
 
-const lunch = ['Mac n Cheese'];
-console.log(tail(lunch));
+const lunch = ['Mac n Cheese', 'Soup', 'Gimbap'];
+tail(lunch);
 console.log(lunch);
 
 // Test Case: Check the original array
