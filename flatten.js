@@ -30,21 +30,20 @@ const assertArraysEqual = function(actual, expected) {
 };
 
 // FLATTEN function
+// loop through the array and check if each element is an array
+// if it is, loop through that element and add each item to the result array
+// if it isn't, add that element to the result array
 const flatten = function(array) {
   let result = [];
-  // loop through the array and check if each element is an array
   for (let i = 0; i < array.length; i++) {
-    // if it is, loop through that element and add each item to the result array
     if (Array.isArray(array[i]) === true) {
       for (let j = 0; j < array[i].length; j++) {
         result.push(array[i][j]);
       }
     } else {
-    // if it isn't, add that element to the result array
       result.push(array[i]);
     }
   }
-  // return the result array, function terminate
   return result;
 };
 
