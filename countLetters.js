@@ -1,0 +1,45 @@
+// Assert test function
+const assertEqual = function(actual, expected) {
+  if (actual === expected) {
+    console.log(`✅ Assertion Passed: ${actual} === ${expected}`);
+  } else {
+    console.log(`⛔ Assertion Failed: ${actual} !== ${expected}`);
+  }
+};
+
+// The function should take in a sentence (as a string)
+// then return a count of each of the letters in that sentence
+
+const countLetters = function(sentence) {
+  let result = {};
+  for (const letter of sentence) {
+    if (!result[letter]) {
+      result[letter] = 1;
+    } else result[letter] += 1;
+  }
+  return result;
+};
+
+//Test code
+let test1 = countLetters('lighthouse in the house');
+assertEqual(test1['l'], 1);
+assertEqual(test1['i'], 2);
+assertEqual(test1['g'], 1);
+assertEqual(test1['h'], 4);
+assertEqual(test1['t'], 2);
+assertEqual(test1['o'], 2);
+assertEqual(test1['u'], 2);
+assertEqual(test1['s'], 2);
+assertEqual(test1['e'], 3);
+assertEqual(test1['n'], 1);
+
+console.log('--------------');
+
+let test2 = countLetters('test string');
+assertEqual(test2['t'], 3);
+assertEqual(test2['e'], 1);
+assertEqual(test2['s'], 2);
+assertEqual(test2['r'], 1);
+assertEqual(test2['i'], 1);
+assertEqual(test2['n'], 1);
+assertEqual(test2['g'], 1);
