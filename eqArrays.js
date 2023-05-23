@@ -11,6 +11,8 @@ const assertEqual = function(actual, expected) {
 // If their length are different -> return false
 // If they have the same length, iterate through each element of the first array and compare it to the same one on the second array
 // Iteration stops when result is fasle and continue if it is true
+
+// Array comparison function
 const eqArrays = function(array1, array2) {
   let result = true;
   if (array1.length !== array2.length) {
@@ -34,3 +36,4 @@ assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
 assertEqual(eqArrays(["a", "2", "3"], ["A", "2", "3"]), false);
 assertEqual(eqArrays([11, 222, 333], [11, 222, 333]), true);
 assertEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]), false);
+assertEqual(eqArrays(["1", "2", "3"], 1), false);
