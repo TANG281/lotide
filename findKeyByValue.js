@@ -9,10 +9,10 @@ const assertEqual = function(actual, expected) {
 
 
 // takes in an object and a value
-// scan the object and return the first key which contains the given value
+// scan the object and return the FIRST key which contains the given value
 // If no key with that given value is found, then it should return undefined
 const findKeyByValue = function(object, value) {
-  let keyList = Object.keys(object);
+  let keyList = Object.keys(object).reverse();
   let result = undefined;
   for (const key of keyList) {
     if (object[key] === value)
@@ -39,6 +39,7 @@ const carManufacturerOrigin = {
   toyota: 'Japan',
   jeep: 'USA',
   bmw: 'Germany',
+  mercedes: 'Germany',
   vinfast: 'Vietnam',
   volvo: 'Sweden'
 };
