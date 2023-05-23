@@ -2,6 +2,8 @@
 // If their length are different -> return false
 // If they have the same length, iterate through each element of the first array and compare it to the same one on the second array
 // Iteration stops when result is fasle and continue if it is true
+
+// Array comparison function
 const eqArrays = function(array1, array2) {
   let result = true;
   if (array1.length !== array2.length) {
@@ -20,7 +22,7 @@ const eqArrays = function(array1, array2) {
   }
 };
 
-// Test code for arrays
+// Assert array test function
 const assertArraysEqual = function(actual, expected) {
   if (eqArrays(actual, expected) === true) {
     console.log(`✅ Assertion Passed: ${actual} === ${expected}`);
