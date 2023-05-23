@@ -3,18 +3,14 @@ const eqArrays = function(array1, array2) {
   let result = true;
   if (array1.length !== array2.length) {
     result = false;
-    return result;
   } else {
     for (let x = 0; x < array1.length; x++) {
       if (array1[x] !== array2[x]) {
         result = false;
-        return result;
-      } else {
-        result = true;
       }
     }
-    return result;
   }
+  return result;
 };
 
 // Object comparison function
@@ -24,7 +20,6 @@ const eqObjects = function(object1, object2) {
   let result = true;
   if (keyList1.length !== keyList2.length) {
     result = false;
-    return result;
   } else {
     for (const key of keyList1) {
       if (!object2[key]) {
@@ -36,7 +31,8 @@ const eqObjects = function(object1, object2) {
         result = false;
       }
     }
-  } return result;
+  }
+  return result;
 };
 
 // Assert object test function
