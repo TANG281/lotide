@@ -37,13 +37,16 @@ assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined);
 console.log('Test 2');
 const carManufacturerOrigin = {
   toyota: 'Japan',
+  honda: 'Japan',
   jeep: 'USA',
+  gmc: 'USA',
   bmw: 'Germany',
   mercedes: 'Germany',
   vinfast: 'Vietnam',
   volvo: 'Sweden'
 };
-
+assertEqual(findKeyByValue(carManufacturerOrigin, 'Japan'), 'toyota');
+assertEqual(findKeyByValue(carManufacturerOrigin, 'USA'), 'jeep');
 assertEqual(findKeyByValue(carManufacturerOrigin, 'Vietnam'), 'vinfast');
 assertEqual(findKeyByValue(carManufacturerOrigin, 'Germany'), 'bmw');
 assertEqual(findKeyByValue(carManufacturerOrigin, 'Korea'), undefined);
