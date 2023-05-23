@@ -1,5 +1,3 @@
-const { inspect } = require('util');
-
 // Array comparison function
 const eqArrays = function(array1, array2) {
   let result = true;
