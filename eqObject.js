@@ -32,8 +32,8 @@ const eqObjects = function(object1, object2) {
     for (const key of keyList1) {
       if (!object2[key]) {
         result = false;
-      } else if (Array.isArray(object2[key]) === true) {
-        if (eqArrays(object1[key], object2[key]) === false)
+      } else if (Array.isArray(object2[key])) {
+        if (!eqArrays(object1[key], object2[key]))
           result = false;
       } else if (object2[key] !== object1[key]) {
         result = false;
