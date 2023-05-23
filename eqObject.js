@@ -28,7 +28,6 @@ const eqObjects = function(object1, object2) {
   let result = true;
   if (keyList1.length !== keyList2.length) {
     result = false;
-    return result;
   } else {
     for (const key of keyList1) {
       if (!object2[key]) {
@@ -40,7 +39,8 @@ const eqObjects = function(object1, object2) {
         result = false;
       }
     }
-  } return result;
+  }
+  return result;
 };
 
 
