@@ -11,6 +11,7 @@ const assertEqual = function(actual, expected) {
 // takes in an object and a value
 // scan the object and return the FIRST key which contains the given value
 // If no key with that given value is found, then it should return undefined
+// Add .reverse() method to make sure the FIRST key will overwrite the other key if there are multiple keys with the same value
 const findKeyByValue = function(object, value) {
   let keyList = Object.keys(object).reverse();
   let result = undefined;
