@@ -13,15 +13,20 @@ const assertEqual = function(actual, expected) {
 const countLetters = function(sentence) {
   let result = {};
   for (const letter of sentence) {
-    if (!result[letter]) {
-      result[letter] = 1;
-    } else result[letter] += 1;
+    if (letter !== ' ') {
+      if (!result[letter]) {
+        result[letter] = 1;
+      } else result[letter] += 1;
+    }
   }
   return result;
 };
 
 //Test code
+const inspect = require('util').inspect;
+
 let test1 = countLetters('lighthouse in the house');
+console.log(inspect(test1));
 assertEqual(test1['l'], 1);
 assertEqual(test1['i'], 2);
 assertEqual(test1['g'], 1);
@@ -36,6 +41,7 @@ assertEqual(test1['n'], 1);
 console.log('--------------');
 
 let test2 = countLetters('test string');
+console.log(inspect(test2));
 assertEqual(test2['t'], 3);
 assertEqual(test2['e'], 1);
 assertEqual(test2['s'], 2);
