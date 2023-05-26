@@ -26,8 +26,6 @@ const assertArraysEqual = function(actual, expected) {
 //  - A callback function
 // The map function will return a new array based on the results of the callback function.
 
-
-
 // Personal map function
 const map = function(array, callbackFn) {
   const results = [];
