@@ -26,7 +26,7 @@ const assertArraysEqual = function(actual, expected) {
 //  - A callback function
 // The map function will return a new array based on the results of the callback function.
 
-const words = ['currently', 'in', 'week', 'two'];
+
 
 // Personal map function
 const map = function(array, callbackFn) {
@@ -37,11 +37,12 @@ const map = function(array, callbackFn) {
   return results;
 };
 
+// Practice test code
+const words = ['currently', 'in', 'week', 'two'];
 const result1 = map(words, word => word[0]);
 console.log(result1);
 
 // Test code
-
 console.log('Test 1');
 const videogames = [
   {name: 'Final Fantasy IX', genre: 'RPG'},
