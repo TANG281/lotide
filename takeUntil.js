@@ -31,11 +31,9 @@ const takeUntil = function(array, callback) {
   let output = [];
   for (let x = 0; x < array.length; x++) {
     output.push(array[x]);
-    if (callback(array[x + 1])) return output;
+    if (callback(array[x + 1])) return output; // The code will stop BEFORE callback function is truthy
   }
 };
-
-
 
 // Test code
 const data1 = [1, 2, 5, 7, 2, -1, 2, 4, 5];
