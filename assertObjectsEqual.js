@@ -16,22 +16,21 @@ const eqArrays = function(array1, array2) {
 const eqObjects = function(object1, object2) {
   const keyList1 = Object.keys(object1);
   const keyList2 = Object.keys(object2);
-  let result = true;
   if (keyList1.length !== keyList2.length) {
-    result = false;
+    return false;
   } else {
     for (const key of keyList1) {
       if (!object2[key]) {
-        result = false;
-      } else if (Array.isArray(object2[key]) === true) {
-        if (eqArrays(object1[key], object2[key]) === false)
-          result = false;
+        return false;
+      } else if (Array.isArray(object2[key])) {
+        if (!eqArrays(object1[key], object2[key]))
+          return false;
       } else if (object2[key] !== object1[key]) {
-        result = false;
+        return false;
       }
     }
   }
-  return result;
+  return true;
 };
 
 // Assert object test function
