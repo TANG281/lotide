@@ -14,16 +14,16 @@ const assertEqual = function(actual, expected) {
 
 // Array comparison function
 const eqArrays = function(array1, array2) {
-  let result = true;
   if (array1.length !== array2.length) {
-    result = false;
-  } else {
-    for (let x = 0; x < array1.length; x++) {
-      if (array1[x] !== array2[x])
-        result = false;
-    }
+    return false;
   }
-  return result;
+  
+  for (let x = 0; x < array1.length; x++) {
+    if (array1[x] !== array2[x])
+      return false;
+    }
+  
+  return true;
 };
 
 assertEqual(eqArrays([1, 2, 3], [3, 2, 1]), false);
