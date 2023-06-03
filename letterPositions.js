@@ -1,15 +1,15 @@
 // Array comparison function
 const eqArrays = function(array1, array2) {
-  let result = true;
   if (array1.length !== array2.length) {
-    result = false;
-  } else {
-    for (let x = 0; x < array1.length; x++) {
-      if (array1[x] !== array2[x])
-        result = false;
-    }
+    return false;
   }
-  return result;
+  
+  for (let x = 0; x < array1.length; x++) {
+    if (array1[x] !== array2[x])
+      return false;
+    }
+  
+  return true;
 };
 
 // Assert array test function
@@ -25,11 +25,19 @@ const assertArraysEqual = function(actual, expected) {
 // For each letter, multiple numbers may be needed to represent all the places in the string that it shows up
 
 const letterPositions = function(sentence) {
-  const result = {};
-  for (let i = 0; i < sentence.length; i++) {
-    if (!result[sentence[i]]) {
-      result[sentence[i]] = [i];
-    } else result[sentence[i]].push(i);
+  let result = {};
+  for (let i in sentence) {
+    let letter = sentence[i];
+
+    if (letter === ' ') {
+      continue;
+    }
+
+    if (!result[letter]) {
+      result[letter] = [];
+    }
+    
+    result[letter].push(Number(i));
   }
   return result;
 };
@@ -54,7 +62,6 @@ console.log(inspect(test2));
 assertArraysEqual(test2['w'], [0]);
 assertArraysEqual(test2['e'], [1, 5, 7, 11, 13]);
 assertArraysEqual(test2['b'], [2]);
-assertArraysEqual(test2[' '], [3]);
 assertArraysEqual(test2['d'], [4]);
 assertArraysEqual(test2['v'], [6]);
 assertArraysEqual(test2['l'], [8]);
