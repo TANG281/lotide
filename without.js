@@ -1,25 +1,5 @@
-// Array comparison function
-const eqArrays = function(array1, array2) {
-  let result = true;
-  if (array1.length !== array2.length) {
-    result = false;
-  } else {
-    for (let x = 0; x < array1.length; x++) {
-      if (array1[x] !== array2[x])
-        result = false;
-    }
-  }
-  return result;
-};
-
-// Assert array test function
-const assertArraysEqual = function(actual, expected) {
-  if (eqArrays(actual, expected) === true) {
-    console.log(`✅ Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`⛔ Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
+const { eqArrays } = require('./eqArrays');
+const { assertArraysEqual } = require('./assertArraysEqual');
 
 // WITHOUT function - return a NEW array with only elements from source array that are not included in itemsToRemove array
 const without = function(source, itemsToRemove) {
