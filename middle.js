@@ -1,6 +1,3 @@
-const { eqArrays } = require('./eqArrays');
-const { assertArraysEqual } = require('./assertArraysEqual');
-
 // MIDDLE function
 // Check the input array length. Array with 2 elements or less will return an empty result array, function terminate
 // For array with more than 2 elements, there will be 2 scenarios
@@ -21,12 +18,6 @@ const middle = function(array) {
   return result;
 };
 
-// Test function MIDDLE
-assertArraysEqual(middle([1]), []);
-assertArraysEqual(middle([1, 2]), []);
-assertArraysEqual(middle([1, 2, 3]), [2]);
-assertArraysEqual(middle([1, 2, 3, 4, 5]), [3]);
-assertArraysEqual(middle([1, 2, 3, 4]), [2, 3]);
-assertArraysEqual(middle([1, 2, 3, 4, 5, 6]), [3, 4]);
+module.exports = { middle };
 
 
