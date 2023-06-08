@@ -1,5 +1,5 @@
-const { eqArrays } = require('./eqArrays');
-const { eqObjects } = require('./eqObjects');
+const eqArrays = require('./eqArrays');
+const eqObjects = require('./eqObjects');
 
 // Assert object test function
 const assertObjectsEqual = function(actual, expected) {
@@ -18,4 +18,4 @@ const assertObjectsEqual = function(actual, expected) {
 // const anotherMultiColorShirtObject = { size: "medium", colors: ["red", "blue"] };
 // assertObjectsEqual(multiColorShirtObject, anotherMultiColorShirtObject);
 
-module.exports = { assertObjectsEqual };
+module.exports = assertObjectsEqual;

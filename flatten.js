@@ -1,5 +1,5 @@
-const { eqArrays } = require('./eqArrays');
-const { assertArraysEqual } = require('./assertArraysEqual');
+const eqArrays = require('./eqArrays');
+const assertArraysEqual = require('./assertArraysEqual');
 
 // FLATTEN function
 // loop through the array and check if each element is an array

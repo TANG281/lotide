@@ -1,5 +1,5 @@
-const { assertArraysEqual } = require('../assertArraysEqual');
-const { middle } = require('../middle');
+const assertArraysEqual = require('../assertArraysEqual');
+const middle = require('../middle');
 
 // Test function MIDDLE
 assertArraysEqual(middle([1]), []);

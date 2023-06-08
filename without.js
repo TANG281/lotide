@@ -1,5 +1,5 @@
-const { eqArrays } = require('./eqArrays');
-const { assertArraysEqual } = require('./assertArraysEqual');
+const eqArrays = require('./eqArrays');
+const assertArraysEqual = require('./assertArraysEqual');
 
 // WITHOUT function - return a NEW array with only elements from source array that are not included in itemsToRemove array
 const without = function(source, itemsToRemove) {

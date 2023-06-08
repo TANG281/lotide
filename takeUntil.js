@@ -1,5 +1,5 @@
-const { eqArrays } = require('./eqArrays');
-const { assertArraysEqual } = require('./assertArraysEqual');
+const eqArrays = require('./eqArrays');
+const assertArraysEqual = require('./assertArraysEqual');
 
 // Take in two parameters:
 //  1. The array to work with

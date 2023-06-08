@@ -1,4 +1,4 @@
-const { assertEqual } = require('./assertEqual');
+const assertEqual = require('./assertEqual');
 
 // This function should take in a collection of items
 // return counts for a specific subset of those items

@@ -1,5 +1,5 @@
-const { assertEqual } = require('./assertEqual');
-const { eqArrays } = require('./eqArrays');
+const assertEqual = require('./assertEqual');
+const eqArrays = require('./eqArrays');
 
 // Object comparison function
 const eqObjects = function(object1, object2) {
@@ -39,4 +39,4 @@ const eqObjects = function(object1, object2) {
 // const longSleeveMultiColorShirtObject = { size: "medium", colors: ["red", "blue"], sleeveLength: "long" };
 // assertEqual(eqObjects(multiColorShirtObject, longSleeveMultiColorShirtObject), false); // => false
 
-module.exports = { eqObjects };
+module.exports = eqObjects;

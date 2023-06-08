@@ -1,5 +1,5 @@
-const { eqArrays } = require('./eqArrays');
-const { assertArraysEqual } = require('./assertArraysEqual');
+const eqArrays = require('./eqArrays');
+const assertArraysEqual = require('./assertArraysEqual');
 
 // return all the indices (zero-based positions) in the string where each character is found
 // For each letter, multiple numbers may be needed to represent all the places in the string that it shows up
