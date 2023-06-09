@@ -42,3 +42,5 @@ assertEqual(findKeyByValue(carManufacturerOrigin, 'USA'), 'jeep');
 assertEqual(findKeyByValue(carManufacturerOrigin, 'Vietnam'), 'vinfast');
 assertEqual(findKeyByValue(carManufacturerOrigin, 'Germany'), 'bmw');
 assertEqual(findKeyByValue(carManufacturerOrigin, 'Korea'), undefined);
+
+module.exports = findKeyByValue;

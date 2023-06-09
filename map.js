@@ -41,3 +41,5 @@ console.log('Test 3');
 const string = ['a', 'b', 'c'];
 const testResult3 = map(string, item => `${item} is at index ${string.indexOf(item)}`);
 assertArraysEqual(testResult3, ['a is at index 0', 'b is at index 1', 'c is at index 2']);
+
+module.exports = map;

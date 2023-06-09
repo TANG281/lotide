@@ -22,3 +22,5 @@ const flatten = function(array) {
 // Check flatten function
 assertArraysEqual(flatten([1, 2, [3, 4], 5, [6]]), [1, 2, 3, 4, 5, 6]);
 assertArraysEqual(flatten(['nice', 'TGIF', [3, 4], 'Long weekend', [6]]), ['nice', 'TGIF', 3, 4, 'Long weekend', 6]);
+
+module.exports = flatten;

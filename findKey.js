@@ -34,3 +34,5 @@ const carManufacturerOrigin = {
   volvo: 'Sweden'
 };
 assertEqual(findKey(carManufacturerOrigin, x => x === 'Japan'), 'toyota');
+
+module.exports = findKey;

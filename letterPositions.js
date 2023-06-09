@@ -50,3 +50,5 @@ assertArraysEqual(test2['p'], [10]);
 assertArraysEqual(test2['m'], [12]);
 assertArraysEqual(test2['n'], [14]);
 assertArraysEqual(test2['t'], [15]);
+
+module.exports = letterPositions;
