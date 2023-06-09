@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@tuannguyen/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "Tuan Nguyen Lotide library as part of Lighthouse Labs study",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/TANG281/lotide.git"
   },
-  "author": "",
+  "author": "Tuan Nguyen",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/TANG281/lotide/issues"
