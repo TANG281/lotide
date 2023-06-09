@@ -1,7 +1,7 @@
 {
-  "name": "@tuannguyen/lotide",
+  "name": "@chibeo/lotide",
   "version": "1.0.0",
-  "description": "Tuan Nguyen Lotide library as part of Lighthouse Labs study",
+  "description": "Lotide library as part of Lighthouse Labs study",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
