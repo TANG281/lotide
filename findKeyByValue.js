@@ -14,33 +14,33 @@ const findKeyByValue = function(object, value) {
 };
 
 
-// Test code
+// // Test code
 
-console.log('Test 1');
-const bestTVShowsByGenre = {
-  sciFi: "The Expanse",
-  comedy: "Brooklyn Nine-Nine",
-  drama:  "The Wire"
-};
+// console.log('Test 1');
+// const bestTVShowsByGenre = {
+//   sciFi: "The Expanse",
+//   comedy: "Brooklyn Nine-Nine",
+//   drama:  "The Wire"
+// };
 
-assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
-assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined);
+// assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
+// assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined);
 
-console.log('Test 2');
-const carManufacturerOrigin = {
-  toyota: 'Japan',
-  honda: 'Japan',
-  jeep: 'USA',
-  gmc: 'USA',
-  bmw: 'Germany',
-  mercedes: 'Germany',
-  vinfast: 'Vietnam',
-  volvo: 'Sweden'
-};
-assertEqual(findKeyByValue(carManufacturerOrigin, 'Japan'), 'toyota');
-assertEqual(findKeyByValue(carManufacturerOrigin, 'USA'), 'jeep');
-assertEqual(findKeyByValue(carManufacturerOrigin, 'Vietnam'), 'vinfast');
-assertEqual(findKeyByValue(carManufacturerOrigin, 'Germany'), 'bmw');
-assertEqual(findKeyByValue(carManufacturerOrigin, 'Korea'), undefined);
+// console.log('Test 2');
+// const carManufacturerOrigin = {
+//   toyota: 'Japan',
+//   honda: 'Japan',
+//   jeep: 'USA',
+//   gmc: 'USA',
+//   bmw: 'Germany',
+//   mercedes: 'Germany',
+//   vinfast: 'Vietnam',
+//   volvo: 'Sweden'
+// };
+// assertEqual(findKeyByValue(carManufacturerOrigin, 'Japan'), 'toyota');
+// assertEqual(findKeyByValue(carManufacturerOrigin, 'USA'), 'jeep');
+// assertEqual(findKeyByValue(carManufacturerOrigin, 'Vietnam'), 'vinfast');
+// assertEqual(findKeyByValue(carManufacturerOrigin, 'Germany'), 'bmw');
+// assertEqual(findKeyByValue(carManufacturerOrigin, 'Korea'), undefined);
 
 module.exports = findKeyByValue;
