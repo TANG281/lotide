@@ -10,7 +10,7 @@
 // assertArraysEqual(middle([1, 2, 3, 4, 5, 6]), [3, 4]);
 
 const assert = require('chai').assert;
-const middle = require('../middle');
+const { middle } = require('../index');
 
 describe('#middle', () => {
   it("return [] for [1]", () => {
@@ -33,4 +33,4 @@ describe('#middle', () => {
     const expect = [2, 3];
     assert.deepEqual(output, expect);
   });
-})
+});

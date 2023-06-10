@@ -19,7 +19,7 @@
 // assertEqual(words.length, 3); // original array should still have 3 elements!
 
 const assert = require('chai').assert;
-const tail = require('../tail');
+const { tail } = require('../index');
 
 describe('#tail', () => {
   it("return ['Lighthouse', 'Labs'] for ['Hello', 'Lighthouse', 'Labs']", () => {
@@ -42,4 +42,4 @@ describe('#tail', () => {
     const expect = [];
     assert.deepEqual(output, expect);
   });
-})
+});
