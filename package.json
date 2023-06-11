@@ -2,7 +2,7 @@
   "name": "@chibeo/lotide",
   "version": "1.0.0",
   "description": "Lotide library as part of Lighthouse Labs study",
-  "main": "assertArraysEqual.js",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
